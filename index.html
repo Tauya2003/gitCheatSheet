@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <title>Git Cheat Sheet</title>
+</head>
+<body>
+    <!-- Header Section Start -->
+    <header class="header">
+        <div class="row">
+            <img src="images/github-icon.png" alt="Github icon">
+            <h3>Education</h3>       
+        </div>
+        <div class="column">
+            <h1>Git Cheat Sheet</h1>
+            <p>
+                Git is the free and open source distributed version control system 
+                that's responsible for everything Github related happens locally on
+                your computer. This cheat sheet features the most important and commonly
+                used Git commands for easy reference.
+            </p>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Main Section Start -->
+    <section class="main-section">
+        <div class="container">              
+        
+            <div class="container-left">
+                <!-- Main Item Start -->
+                <div class="item" >
+                    <div class="item-title">
+                        <h4>Installation &amp; GUIs</h4>
+                    </div>
+                    <p>With platform specific installers for Git,Github also provides 
+                        the ease of staying up-to-date with the latest releases of the 
+                        command line tool while providing a graphical user interface for
+                        day-to-day interactions, review and repository synchronization.  
+                    </p>
+    
+                    <h4>Github for Windows</h4>
+                    <a href="htps://windows.github.com">htps://windows.github.com</a>
+                    
+                    <h4>Github for Mac</h4>
+                    <a href="htps://mac.github.com">htps://mac.github.com</a>
+                    <p style="padding-top: 10px;">For Linux and Solaris platforms, the latest release is available
+                        on the official Git website.
+                    </p>
+                    <h4>Git for All Platforms</h4>
+                    <a href="htp://git-scm.com">htp://git-scm.com</a>
+                </div>
+                <!-- Main Item End -->
+    
+                <!-- Main Item Start -->
+                <div class="item grid" data-aos="fade-up">
+                    <div class="item-title">
+                        <h4>Setup</h4>
+                    </div>
+                    <p>
+                        Configuring user information used across all local repositories.
+                    </p>
+                    <!-- Sub-item Start -->
+                    <div class="sub-item" data-aos="fade-right">
+                        <div class="top"><p>git config --global user.name "[firstname lastname]"</p></div>
+                        <div class="bottom">
+                            <p>set a name that is identifiable for credit when review version history</p>
+                        </div>
+                    </div>
+                     <!-- Sub-item Start -->
+                     <div class="sub-item" data-aos="fade-right">
+                        <div class="top"><p>git config --user.email "[valid-email]"</p></div>
+                        <div class="bottom">
+                            <p>set an email address that will be associated each history marker</p>
+                        </div>
+                    </div>
+                     <!-- Sub-item Start -->
+                     <div class="sub-item" data-aos="fade-right">
+                        <div class="top"><p>git config --global color.ui auto</p></div>
+                        <div class="bottom">
+                            <p>set automatic command line coloring for Git for easy reviewing</p>
+                        </div>
+                    </div>
+                     
+                </div>
+                <!-- Main Item End -->
+    
+                <!-- Main Item Start -->
+                <div class="item grid" data-aos="fade-up">
+                    <div class="item-title">
+                        <h4>Setup &amp; INIT</h4>
+                    </div>
+                    <p>
+                        Configuring user information used across all local repository.
+                    </p>
+                    <!-- Sub-item Start -->
+                    <div class="sub-item" data-aos="fade-right">
+                        <div class="top"><p>git init</p></div>
+                        <div class="bottom">
+                            <p>initialize an existing directory as a Git repository</p>
+                        </div>
+                    </div>
+                     <!-- Sub-item Start -->
+                     <div class="sub-item" data-aos="fade-right">
+                        <div class="top"><p>git clone[url]</p></div>
+                        <div class="bottom">
+                            <p>retrieve an entire repository from a hosted location via URL</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Main Item End -->
+    
+                <!-- Main Item Start -->
+                <div class="item grid" data-aos="fade-up">
+                    <div class="item-title">
+                        <h4>Inspect &amp; Compare</h4>
+                    </div>
+                    <p>
+                        Examining logs, diffs and object infromation.
+                    </p>
+                    <!-- Sub-item Start -->
+                    <div class="sub-item" data-aos="fade-right">
+                        <div class="top"><p>git log</p></div>
+                        <div class="bottom">
+                            <p>show the commit history for the currently active branch</p>
+                        </div>
+                    </div>
+                     <!-- Sub-item Start -->
+                     <div class="sub-item" data-aos="fade-right">
+                        <div class="top"><p>git log branchB..branchA</p></div>
+                        <div class="bottom">
+                            <p>show the commits on branchA that are not on branchB</p>
+                        </div>
+                    </div>
+                    <!-- Sub-item Start -->
+                    <div class="sub-item" data-aos="fade-right">
+                        <div class="top"><p>git log --follow [file]</p></div>
+                        <div class="bottom">
+                            <p>show the commits that changed file, even across renames</p>
+                        </div>
+                    </div>
+                     <!-- Sub-item Start -->
+                     <div class="sub-item" data-aos="fade-right">
+                        <div class="top"><p>git diff branchB..branchA</p></div>
+                        <div class="bottom">
+                            <p>show the diff of what is in branchA that is not in branchB</p>
+                        </div>
+                    </div>
+                     <!-- Sub-item Start -->
+                     <div class="sub-item" data-aos="fade-right">
+                        <div class="top"><p>git show [SHA]</p></div>
+                        <div class="bottom">
+                            <p>show any object in Git  in human-readable format</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Main Item End -->
+
+                <!-- Main Item Start -->
+                <div class="item grid" data-aos="fade-up">
+                    <div class="item-title">
+                        <h4>Tracking Path Changes</h4>
+                    </div>
+                    <p>
+                        Versioning file removes and path changes.
+                    </p>
+                    <!-- Sub-item Start -->
+                    <div class="sub-item" data-aos="fade-right">
+                        <div class="top"><p>git rm [files]</p></div>
+                        <div class="bottom">
+                            <p>delete the file from project and stage the removal for commit</p>
+                        </div>
+                    </div>
+                     <!-- Sub-item Start -->
+                     <div class="sub-item" data-aos="fade-right">
+                        <div class="top"><p>git mv [existing-path] [new-path]</p></div>
+                        <div class="bottom">
+                            <p>change an existing file path and stage the move</p>
+                        </div>
+                    </div>
+                    <!-- Sub-item Start -->
+                    <div class="sub-item" data-aos="fade-right">
+                        <div class="top"><p>git log --stat -M</p></div>
+                        <div class="bottom">
+                            <p>show all commit logs with indication of amy paths that moved</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Main Item End -->
+    
+                <!-- Main Item Start -->
+                <div class="item grid" data-aos="fade-up">
+                    <div class="item-title">
+                        <h4>Ignoring Patterns</h4>
+                    </div>
+                    <p>
+                        Preventing unintentional staging or commiting of files.
+                    </p>
+                    <!-- Sub-item Start -->
+                    <div class="sub-item" data-aos="fade-right">
+                        <div class="top"><p>logs/<br>*.notes<br>pattern*/</p></div>
+                        <div class="bottom">
+                            <p>Save a file with desired patterns as .gitignore with either direct string matches or wildcard globs.</p>
+                        </div>
+                    </div>
+                     <!-- Sub-item Start -->
+                     <div class="sub-item" data-aos="fade-right">
+                        <div class="top"><p>git config --global core.excludesfile [file]</p></div>
+                        <div class="bottom">
+                            <p>system wide ignore pattern for all local repositories</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Main Item End -->
+            </div>
+    
+            <div class="container-right">
+                <!-- Main Item Start -->
+                <div class="item grid" data-aos="fade-up">
+                    <div class="item-title">
+                        <h4>Stage &amp; Snapshot</h4>
+                    </div>
+                    <p>
+                        Working with snapshots and the Git staging area.
+                    </p>
+                    <!-- Sub-item Start -->
+                    <div class="sub-item" data-aos="fade-left">
+                        <div class="top"><p>git status</p></div>
+                        <div class="bottom">
+                            <p>show modified files in working directory, staged for your next commit</p>
+                        </div>
+                    </div>
+                     <!-- Sub-item Start -->
+                     <div class="sub-item" data-aos="fade-left">
+                        <div class="top"><p>git add [file]</p></div>
+                        <div class="bottom">
+                            <p>add a file as it looks now to your next commit (stage)</p>
+                        </div>
+                    </div>
+                     <!-- Sub-item Start -->
+                     <div class="sub-item" data-aos="fade-left">
+                        <div class="top"><p>git reset [file]</p></div>
+                        <div class="bottom">
+                            <p>unstage a file while retaining the changes in working directory</p>
+                        </div>
+                    </div>
+                     <!-- Sub-item Start -->
+                     <div class="sub-item" data-aos="fade-left">
+                        <div class="top"><p>git diff</p></div>
+                        <div class="bottom">
+                            <p>diff of what is changed but not staged</p>
+                        </div>
+                    </div>
+                     <!-- Sub-item Start -->
+                     <div class="sub-item" data-aos="fade-left">
+                        <div class="top"><p>git diff --staged</p></div>
+                        <div class="bottom">
+                            <p>diff of what is staged but not yet commited</p>
+                        </div>
+                    </div>
+                     <!-- Sub-item Start -->
+                     <div class="sub-item" data-aos="fade-left">
+                        <div class="top"><p>git commit -m "[descriptive message]"</p></div>
+                        <div class="bottom">
+                            <p>commit your staged content as a new commit snapshot</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Main Item End -->
+    
+                <!-- Main Item Start -->
+                <div class="item grid" data-aos="fade-up">
+                    <div class="item-title">
+                        <h4>Branch &amp; Merge</h4>
+                    </div>
+                    <p>
+                        Isolating work in branches, changing context, and integrating changes.
+                    </p>
+                    <!-- Sub-item Start -->
+                    <div class="sub-item" data-aos="fade-left">
+                        <div class="top"><p>git branch</p></div>
+                        <div class="bottom">
+                            <p>list your branches. a * will appear next to the currently active branch</p>
+                        </div>
+                    </div>
+                     <!-- Sub-item Start -->
+                     <div class="sub-item" data-aos="fade-left">
+                        <div class="top"><p>git branch [branch-name]</p></div>
+                        <div class="bottom">
+                            <p>create a new branch at the current commit</p>
+                        </div>
+                    </div>
+                     <!-- Sub-item Start -->
+                     <div class="sub-item" data-aos="fade-left">
+                        <div class="top"><p>git checkout</p></div>
+                        <div class="bottom">
+                            <p>switch to another branch and chek it out into your working directory</p>
+                        </div>
+                    </div>
+                    <!-- Sub-item Start -->
+                    <div class="sub-item" data-aos="fade-left">
+                        <div class="top"><p>git merge [branch]</p></div>
+                        <div class="bottom">
+                            <p>merge the specificified branch's history into the current one</p>
+                        </div>
+                    </div>
+                    <!-- Sub-item Start -->
+                    <div class="sub-item" data-aos="fade-left">
+                        <div class="top"><p>git log</p></div>
+                        <div class="bottom">
+                            <p>show all commit in the current branch's history</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Main Item End -->
+    
+                <!-- Main Item Start -->
+                <div class="item grid" data-aos="fade-up">
+                    <div class="item-title">
+                        <h4>Share &amp; Update</h4>
+                    </div>
+                    <p>
+                        Retrieving updates from another repository and updating local repos.
+                    </p>
+                    <!-- Sub-item Start -->
+                    <div class="sub-item" data-aos="fade-left">
+                        <div class="top"><p>git remote add [alias] [url]</p></div>
+                        <div class="bottom">
+                            <p>add a git URL as an alias</p>
+                        </div>
+                    </div>
+                     <!-- Sub-item Start -->
+                     <div class="sub-item" data-aos="fade-left">
+                        <div class="top"><p>git fetch [alias]</p></div>
+                        <div class="bottom">
+                            <p>fetch down all the branches form that Git remote</p>
+                        </div>
+                    </div>
+                    <!-- Sub-item Start -->
+                    <div class="sub-item" data-aos="fade-left">
+                        <div class="top"><p>git merge [alias]/[branch]</p></div>
+                        <div class="bottom">
+                            <p>merge a remote branch into your current branch to bring it up to date</p>
+                        </div>
+                    </div>
+                     <!-- Sub-item Start -->
+                     <div class="sub-item" data-aos="fade-left">
+                        <div class="top"><p>git push [alias] [branch]</p></div>
+                        <div class="bottom">
+                            <p>Transmit local branch commits to the remote repository branch</p>
+                        </div>
+                    </div>
+                     <!-- Sub-item Start -->
+                     <div class="sub-item" data-aos="fade-left">
+                        <div class="top"><p>git pull</p></div>
+                        <div class="bottom">
+                            <p>fetch and merge any commits from the tracking remote branch</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Main Item End -->
+    
+                <!-- Main Item Start -->
+                <div class="item grid" data-aos="fade-up">
+                    <div class="item-title">
+                        <h4>Rewrite History</h4>
+                    </div>
+                    <p>
+                        Rewriting branches, updating commits and clearing history
+                    </p>
+                    <!-- Sub-item Start -->
+                    <div class="sub-item" data-aos="fade-left">
+                        <div class="top"><p>git rebase [branch]</p></div>
+                        <div class="bottom">
+                            <p>apply any commits of current branch ahead of specified one</p>
+                        </div>
+                    </div>
+                     <!-- Sub-item Start -->
+                     <div class="sub-item" data-aos="fade-left">
+                        <div class="top"><p>git reset --hard [commit]</p></div>
+                        <div class="bottom">
+                            <p>clear staging area, rewrite working tree from specified commit</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Main Item End -->
+    
+                <!-- Main Item Start -->
+                <div class="item grid" data-aos="fade-up">
+                    <div class="item-title">
+                        <h4>Temporary Commits</h4>
+                    </div>
+                    <p>
+                        Temporarily store modified, tracked files in order to change branches.
+                    </p>
+                    <!-- Sub-item Start -->
+                    <div class="sub-item" data-aos="fade-left">
+                        <div class="top"><p>git stash</p></div>
+                        <div class="bottom">
+                            <p>Save modified and staged changes</p>
+                        </div>
+                    </div>
+                     <!-- Sub-item Start -->
+                     <div class="sub-item" data-aos="fade-left">
+                        <div class="top"><p>git stash list</p></div>
+                        <div class="bottom">
+                            <p>list stack-order of stashed file changes</p>
+                        </div>
+                    </div>
+                     <!-- Sub-item Start -->
+                     <div class="sub-item" data-aos="fade-left">
+                        <div class="top"><p>git stash pop</p></div>
+                        <div class="bottom">
+                            <p>write working from top of stash stack</p>
+                        </div>
+                    </div>
+                     <!-- Sub-item Start -->
+                     <div class="sub-item" data-aos="fade-left">
+                        <div class="top"><p>git stash drop</p></div>
+                        <div class="bottom">
+                            <p>discard the changes from top of stash stack</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Main Item End -->
+    
+            </div>
+            
+        </div>
+    </section>
+    <!-- Main Section End -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <p>Teach and learn better, together. Github is free for students and teachers. Discounts available for other educational uses.</p>
+        <p>education@github.com</p>
+        <p>education.github.com</p>
+    </footer>
+    <!-- Footer End -->
+
+
+
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+            offset:150
+        });
+    </script>
+</body>
+</html>

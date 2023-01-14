@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0a0a0a;
+    color: #777;
+    font-family: sans-serif;
+    padding: 50px;
+    font-size: 14px;
+}
+
+.header,
+.main-section,
+.footer{
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* Header Section Start */
+
+.header .row{
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.header .row img{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.header .row h3{
+    color: #eee;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.header .column h1{
+    font-size: 60px;
+    padding-bottom: 20px;
+    color: #23be9d;
+}
+/* Header Section End */
+
+
+/* Main Section Start */
+.main-section{
+    padding: 40px 0;
+}
+
+.main-section .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.main-section .container .container-left,
+.main-section .container .container-right{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+
+.main-section .container .item-title{
+    padding-bottom: 7px;
+}
+
+.main-section .container .item-title h4{
+    color: #fff;
+    font-weight:520;
+}
+
+.main-section .container p{
+    font-size: 13px;
+    padding-bottom: 5px;
+}
+
+.main-section .container .item > h4{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.main-section .container .item a{
+    text-decoration: none;
+    color: #777;
+}
+
+.main-section .container .grid{
+    display: grid;
+    grid-gap: 3px;
+    align-self: start;
+    transition: all ease 0.8s;
+}
+
+.main-section .container .item .sub-item{
+    font-family: monospace;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.main-section .container .item .sub-item .top{
+    padding: 5px;
+    color: #888;
+    font-weight: 500;
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+.main-section .container .item .sub-item .bottom{
+    padding: 5px;
+    background-color: rgba(34, 34, 34, 0.8);
+    font-size: 12px;
+}
+
+/* Main Section End */
+
+
+/* Footer Start */
+
+.footer{
+    font-size: 13px;
+}
+
+.footer p:nth-child(1){
+padding-bottom: 7px;
+color: #23be9d;
+}
+
+/* Footer End */
+
+
+@media (max-width: 700px) {
+    .main-section .container{
+        grid-template-columns: 1fr;
+    }
+}
